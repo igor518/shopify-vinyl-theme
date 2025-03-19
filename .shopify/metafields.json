@@ -1,0 +1,36 @@
+{
+  "article": [],
+  "blog": [],
+  "brand": [],
+  "collection": [],
+  "company": [],
+  "company_location": [],
+  "location": [],
+  "market": [],
+  "order": [],
+  "page": [],
+  "product": [
+    {
+      "key": "model_info",
+      "namespace": "custom",
+      "name": "Model info",
+      "description": "Details of the model's mesuarments",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "manufacturer",
+      "namespace": "custom",
+      "name": "Manufacturer",
+      "description": "This is a manufacturer",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    }
+  ],
+  "variant": [],
+  "shop": []
+}
