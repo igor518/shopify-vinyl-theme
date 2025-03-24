@@ -107,11 +107,19 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "youtube_video_Pz6Q8Q": {
+      "type": "youtube-video",
+      "settings": {
+        "aligment_settings": "center",
+        "video_url_setting": "https://www.youtube.com/watch?v=5OzAekXPNos"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "featured_collection_Tp3hRE"
+    "featured_collection_Tp3hRE",
+    "youtube_video_Pz6Q8Q"
   ]
 }
