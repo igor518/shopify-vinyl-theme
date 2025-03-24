@@ -1,0 +1,54 @@
+{% if section.settings.video_url_setting %}
+<div style="display: flex; justify-content: {{ section.settings.aligment_settings }};">
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/{{ section.settings.video_url_setting.id }}"
+        title="Youtube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+    ></iframe>
+</div>
+{%  endif %}
+
+{% schema %}
+{
+    "name": "Youtube video",
+    "tag": "section",
+    "class": "youtube-video",
+    "settings": [
+        {
+            "type": "select",
+            "label": "Alignment",
+            "id": "aligment_settings",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                },
+                {
+                    "value": "center",
+                    "label": "Center"
+                },
+                {
+                   "value": "right",
+                   "label": "Right"
+                }
+            ]
+        },
+        {
+            "type": "video_url",
+            "label": "Video URL settings",
+            "id": "video_url_setting",
+            "accept": ["youtube"],
+        }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Youtube video",
+        "settings": {}
+      }
+    ]
+}
+{% endschema %}
